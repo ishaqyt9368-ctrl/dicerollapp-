@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dice Roll</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      margin-top: 100px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Dice Rolling App</h2>
+  <button onclick="rollDice()">Roll Dice</button>
+
+  <h1 id="result">🎲</h1>
+
+  <script>
+    function rollDice() {
+      let randomNumber = Math.floor(Math.random() * 6) + 1;
+      document.getElementById("result").innerText = randomNumber;
+    }
+  </script>
+
+</body>
+</html>
